@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XirAUXgSlp1Wj2TphDEh7jzpemlaB+BhHPZtiPn9/rCcN4LGqZ2/ROLc7w0PLFjQJ0eL412DwU60RoRb/7iNyA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mitch\\source\\repos\\TinzyProjects\\TestAuth\\TestAuth.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mitch\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}

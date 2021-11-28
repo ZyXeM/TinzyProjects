@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "556a8858-ce5b-4676-bd2d-4053b1d1d3e6": {
+      "ProjectGuid": "556a8858-ce5b-4676-bd2d-4053b1d1d3e6",
+      "DisplayName": "AuthenticationService",
+      "ColorIndex": 0
+    },
+    "f8968cd5-2aa3-4869-b3c0-eabc46a15319": {
+      "ProjectGuid": "f8968cd5-2aa3-4869-b3c0-eabc46a15319",
+      "DisplayName": "TestAuth",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
