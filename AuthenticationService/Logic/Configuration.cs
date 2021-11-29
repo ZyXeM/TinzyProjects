@@ -42,12 +42,36 @@ namespace AuthenticationServer.Logic
                 RequireConsent = false,
                 AllowAccessTokensViaBrowser = true,
                 RedirectUris =  { "https://localhost:44306/signin-oidc" },
-                PostLogoutRedirectUris = { "https://localhost:44306" },
+                PostLogoutRedirectUris = { "https://localhost:44306/home/index" },
+                AlwaysIncludeUserClaimsInIdToken = true,
+                AlwaysSendClientClaims = true,
+                }
+            
+            ,new Client
+            {
+                ClientName = "CoreMvc",
+                ClientId ="CoreMvc",
+                ClientSecrets = { new Secret("CoreMvc_secret") },
+                AllowedGrantTypes = GrantTypes.Implicit,
+                RequirePkce = false,
+                AllowedScopes =
+                {
+                    IdentityServerConstants.StandardScopes.OpenId,
+                    IdentityServerConstants.StandardScopes.Profile,
+                    "roles",
+                    "offline_access"
+
+                },
+                AllowOfflineAccess = true,
+                RequireConsent = false,
+                AllowAccessTokensViaBrowser = true,
+                RedirectUris =  { "https://localhost:44342/signin-oidc" },
+                PostLogoutRedirectUris = { "https://localhost:44342/home/index" },
                 AlwaysIncludeUserClaimsInIdToken = true,
                 AlwaysSendClientClaims = true,
                 }
             };
-
+        //https://localhost:44342/
         public static ConfigurationDbContext LoadMockData(this ConfigurationDbContext context)
         {
             Seed(context,GetClients().Select(s => s.ToEntity()));
@@ -83,7 +107,7 @@ namespace AuthenticationServer.Logic
             }
 
             IdentityUser userToMakeAdmin = await userManager.FindByNameAsync("Admin");
-            //await userManager.AddClaimAsync(userToMakeAdmin, new Claim("role", "Superuser"));
+            await userManager.AddClaimAsync(userToMakeAdmin, new Claim("Source", "FlexTest2"));
             await userManager.AddToRoleAsync(userToMakeAdmin, InfraRoles.Superuser.ToString());
         }
     }

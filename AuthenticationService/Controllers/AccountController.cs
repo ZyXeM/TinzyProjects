@@ -69,8 +69,7 @@ namespace AuthenticationService.Controllers
             {
                 await signInManager.SignOutAsync();
                 var result = await interaction.GetLogoutContextAsync(logoutId);
-                return new StatusCodeResult(200);
-                //return Redirect("https://localhost:44306/");
+                return Redirect(result.PostLogoutRedirectUri);
 
             }
 

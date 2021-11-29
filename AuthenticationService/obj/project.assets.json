@@ -2441,25 +2441,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mitch\\.nuget\\packages\\": {}
+    "C:\\Users\\nocmku\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mitch\\source\\repos\\TinzyProjects\\AuthenticationService\\AuthenticationService.csproj",
+      "projectUniqueName": "C:\\NoCoreOnline\\Authentication\\TinzyProjects\\AuthenticationService\\AuthenticationService.csproj",
       "projectName": "AuthenticationService",
-      "projectPath": "C:\\Users\\mitch\\source\\repos\\TinzyProjects\\AuthenticationService\\AuthenticationService.csproj",
-      "packagesPath": "C:\\Users\\mitch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mitch\\source\\repos\\TinzyProjects\\AuthenticationService\\obj\\",
+      "projectPath": "C:\\NoCoreOnline\\Authentication\\TinzyProjects\\AuthenticationService\\AuthenticationService.csproj",
+      "packagesPath": "C:\\Users\\nocmku\\.nuget\\packages\\",
+      "outputPath": "C:\\NoCoreOnline\\Authentication\\TinzyProjects\\AuthenticationService\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\mitch\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\nocmku\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
